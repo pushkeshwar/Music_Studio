@@ -1,0 +1,299 @@
+body{
+    color:white;
+    /* background-image:linear-gradient(#4b749f,#243748); */
+    /* background-image:linear-gradient(#295270,#524175); */
+    background-image:linear-gradient(160deg, #1db954, #191414);
+
+    /* background-image: linear-gradient(#2857a4, #403066 ); */
+
+}
+ #navbar{
+    background-color: none !important;
+ }
+ 
+.back-color{
+    background-image:linear-gradient(120deg, #1db954, #05a36b);
+}
+.singer-page-main-body{
+    width:65%;
+    height:auto;
+    display: inline-block;
+    margin-left: 3%;
+    overflow-x: auto;
+}
+
+/* .side-queue{
+    width: 30% !important;
+} */
+
+#card{
+    background-image:linear-gradient(120deg, #1db954, #05a36b);
+}
+.card-head{
+    width:35%;
+    height:18rem;
+}
+ .card-head img{
+    width:100%;
+    height:100%;
+    border-radius: 0px 0px 35% 35%;
+ }
+
+.card-body{
+    width:60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    /* border: 2px solid black; */
+}
+
+.card-button{
+    margin-top: 1rem;;
+}
+
+.card-btn{
+    justify-content: flex-start !important;
+}
+
+.singer-summary p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: .8rem;
+}
+.singer-summary h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+    font-size: .9rem;
+}
+.singer-card h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 520;
+}
+
+#followers{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: .7rem;
+    margin-right: .2rem;
+    margin-top: .8rem;
+}
+
+#tracks{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+    font-size: .8rem;
+    margin-top:.1rem;
+}
+
+.artist-queue-song{
+    height:auto;
+    width:20%;
+    height: 100%;
+    display: flex;
+    justify-content:start;
+    /* border: 2px solid red; */
+}
+.artist-queue{
+    height:auto;
+    width:14rem;
+    /* border:2px solid red; */
+}
+
+.artist-side-sec{
+    margin-top:2rem;
+}
+.artist-side-option{
+    margin-top: .6rem;
+    margin-right: .2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.artist-photo{
+    height:6rem ;
+    width:6rem ;
+    margin-top:5px;
+    margin-left:5px;
+    margin-right:5px;
+    position: relative;
+    display:inline-block;
+}
+
+.artist-photo:hover .image {
+    opacity: 0.5;
+  }
+  
+  .artist-photo:hover .play-btn {
+    opacity: 1;
+  }
+
+.artist-photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.dropbtn {
+    font-size:1rem !important;
+    margin-top: 0 !important;
+    margin-right: 1.3rem !important;
+    padding: 0% !important;
+}
+
+/*hiding Scrollbar*/
+
+main::-webkit-scrollbar{
+    display: none;
+}
+/* media Queries*/ 
+
+@media screen and (max-width:900px){
+    .dropbtn{
+        margin-left: 0 !important;
+     }
+}
+
+@media screen and (max-width:700px){
+    .hamburger-menu div, .hamburger-menu{
+        display:block;
+    }
+    #card{
+        flex-direction: column;
+    }
+    .card-head{
+        width:100%;
+        height:20rem;
+    }
+     .card-head img{
+        width:100%;
+        height:100%;
+        border-radius: 0px 0px 35% 35%;
+     }
+     .card-body{
+        width:100%;
+        height: auto;
+     }
+     .singer-page-main-body{
+        width:50%
+     }
+     .side-queue{
+        width: 40%;
+     }
+     .artist-photo{
+        height:5rem ;
+        width:5rem ;
+     }
+}
+
+@media screen and (max-width:600px){
+    .card-head{
+        width:100%;
+        height:15rem;
+    }
+
+    .card-body h2{
+        font-size: 1.5rem;
+    }
+
+    #followers{
+        font-size: .6rem;;
+    }
+    .singer-summary h5{
+        font-size: .7rem;
+    }
+    .singer-summary p{
+        font-size: .8rem;
+    }
+     #card-button{
+        margin-top :0rem !important;;
+     }
+     #Tracks{
+        font-size:.6rem;
+     }
+     .artist-photo{
+        height:4rem ;
+        width:4rem ;
+     }
+}
+
+@media screen and (max-width:500px){
+    .card-head{
+        width:100%;
+        height:9rem;
+    }
+
+    .card-body h2{
+        font-size: 1rem;
+    }
+
+    #followers{
+        font-size: .4rem;;
+    }
+    .singer-summary h5{
+        font-size: .5rem;
+    }
+    .singer-summary p{
+        font-size: .6rem;
+    }
+     #card-button{
+        margin-top :0rem !important;;
+     }
+     #Tracks{
+        font-size:.4rem;
+     }
+
+     .btn{
+        width:3rem !important;
+        height: 1.3rem !important;
+        font-size: .5rem !important;
+        padding-bottom: .3rem !important;
+     } 
+
+     #viewall{
+        display: none;
+     }
+
+     .Queue-head div h3 {
+        font-size: .8rem;
+     }
+     
+     .queue-num{
+        display: none;
+     }
+}
+
+@media screen and (max-width:400px){
+    .plus{
+        display: none;
+    }
+    .heart i{
+        margin-right: .2rem !important;
+    }
+    .album-time{
+        display: none;
+     }
+     .artist-side-sec{
+        margin-top: .3rem;
+     }
+     .dropbtn{
+        margin-right:0rem !important;
+        margin-top: 0rem !important;
+     }
+
+     .queue-name{
+        font-size: .5rem;
+     }
+     .queue-artist{
+        font-size: .4rem;
+     }
+     .song-list-sec{
+        width:3.5rem;
+        height: 3.5rem;
+     }
+}
+
+/* hidding scrollbar */
+
+.singer-page-main-body::-webkit-scrollbar{
+    display: none;
+  }
